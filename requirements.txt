@@ -1,4 +1,3 @@
-streamlit
-matplotlib.pyplot
-numpy
-json
+streamlit==1.41.1
+matplotlib==3.9.4
+numpy==2.2.1
