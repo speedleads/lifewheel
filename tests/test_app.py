@@ -4,6 +4,14 @@ from streamlit.testing.v1 import AppTest
 
 
 class AppTests(unittest.TestCase):
+    def test_first_visit_shows_live_wheel_before_saving(self):
+        app = AppTest.from_file("streamlit_app.py").run()
+        self.assertFalse(app.exception)
+        self.assertEqual(len(app.slider), 10)
+        self.assertEqual(len(app.get("imgs")), 1)
+        self.assertIn("Live preview", [caption.value for caption in app.caption])
+        self.assertEqual(app.session_state["saved_wheels"], {})
+
     def test_start_save_and_compare(self):
         app = AppTest.from_file("streamlit_app.py").run()
         self.assertFalse(app.exception)
