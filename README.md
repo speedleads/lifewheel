@@ -20,12 +20,15 @@ Direct application dependencies are pinned to compatible versions in requirement
 
 ## Usage
 
-1. Enter a wheel name in the sidebar, adjust the ten sliders, and select **Save This Wheel**.
-   Blank names and existing names are rejected; use a new name for another assessment.
-2. Once at least two wheels are saved, choose up to three in **Compare Saved Wheels**.
-   The radar scale stays fixed at 0–10. All saved wheels also appear in the table.
-3. Select **Download All Wheels as JSON** to back up every saved assessment.
-4. Upload a previous export and select **Import Wheels**. The whole file is validated
+1. The live wheel appears as soon as the app opens. Adjust the ten sidebar sliders
+   to see the radar chart update; the initial scores are all 5.
+2. Enter a wheel name and select **Save This Wheel** to keep a named assessment for
+   the current session. Blank names and existing names are rejected.
+3. Once at least two assessments are saved, choose up to three in
+   **Compare Saved Wheels**. The radar scale stays fixed at 0–10. All saved wheels
+   also appear in the table.
+4. Select **Download All Wheels as JSON** to back up every saved assessment.
+5. Upload a previous export and select **Import Wheels**. The whole file is validated
    before any assessment is added. Errors leave saved assessments unchanged.
    Name collisions are rejected; rename conflicting entries in the file or use a fresh session.
 
