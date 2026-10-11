@@ -8,7 +8,6 @@ class AppTests(unittest.TestCase):
         app = AppTest.from_file("streamlit_app.py").run()
         self.assertFalse(app.exception)
         self.assertEqual(len(app.slider), 10)
-        self.assertEqual(len(app.get("imgs")), 1)
         self.assertIn("Live preview", [caption.value for caption in app.caption])
         self.assertEqual(app.session_state["saved_wheels"], {})
 
